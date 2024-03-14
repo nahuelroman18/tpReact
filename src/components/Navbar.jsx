@@ -4,9 +4,9 @@ import Navbar from "react-bootstrap/Navbar";
 
 import { CartWidget } from "./CartWidget";
 
-export const Navbar = () => {
+export const NavBar = () => {
   return (
-    <Navbar bg="dark" className="container-fluid" data-bs-theme="dark">
+    <Navbar bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home">trapping</Navbar.Brand>
         <Nav className="me-auto">
