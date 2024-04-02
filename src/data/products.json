@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Car",
+        "id": 1,
+        "category": "zapatos",
+        "detail": "texto de relleno que debe ser un poco mas largo",
+        "img":"https://static.abc.es/media/peliculas/000/019/042/cars-2.jpg"
+    },
+    {
+        "name": "bike",
+        "id": 2,
+        "category": "zapatillas",
+        "detail": "texto de relleno que debe ser un poco mas largo",
+        "img":"https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/conoces-a-los-robots-de-transformers/12868513-1-esl-ES/Conoces-a-los-robots-de-Transformers.jpg"
+    },
+    {
+        "name": "bus",
+        "id": 3,
+        "category": "zapatillas",
+        "detail": "texto de relleno que debe ser un poco mas largo",
+        "img":"https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_500,c_limit/g1ljiszo4qhthfpluzbt/nike-joyride.jpg"
+    }
+
+]
