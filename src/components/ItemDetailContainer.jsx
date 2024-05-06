@@ -5,9 +5,10 @@ import { useParams } from "react-router-dom";
 import data from "../data/products.json";
 
 export const ItemDetailContainer = () => {
-  const [products, setProduct] = useState([null]);
+  const [product, setProduct] = useState(null);
 
   const { id } = useParams();
+
   useEffect(() => {
     const get = new Promise((resolve, reject) => {
       setTimeout(() => resolve(data), 2000);
@@ -15,16 +16,16 @@ export const ItemDetailContainer = () => {
 
     get.then((data) => {
       const filter = data.find((p) => p.id === Number(id));
-      setProduct(filter);
+      setProduct(data[0]);
     });
   }, [id]);
 
-  if (!products) return <div>loading</div>;
+  if (!product) return <div>loading</div>;
 
   return (
     <Container className="mt-4">
-      <h1>{products.name} </h1>
-      <img src={products.img} alt="s" />
+      <h1>{product.name}</h1>
+      <img src={product.img} alt="s" />
     </Container>
   );
 };
